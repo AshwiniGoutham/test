@@ -1,0 +1,5 @@
+package com.valtech.model;
+
+public class FarmerSurveyRequest {
+
+}

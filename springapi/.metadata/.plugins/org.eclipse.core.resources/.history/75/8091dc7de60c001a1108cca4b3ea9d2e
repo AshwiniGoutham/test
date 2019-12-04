@@ -1,0 +1,151 @@
+package com.valtech.model;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.sun.istack.internal.NotNull;
+
+@Entity
+@Table(name = "farmer_survey_request")
+public class FarmerSurveyRequest {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Column(name = "survey_request_id")
+	private Long id;
+
+	@NotNull
+	private String name;
+
+	private String hobli;
+	private String village;
+	private String district;
+	private String state;
+	private String mobile;
+	private String ack_no;
+	private String created_by;
+	private int status_id;
+	private Date dateCreated;
+	private Date date_completed;
+	private int assignedTo;
+	private int assigned_by;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getHobli() {
+		return hobli;
+	}
+
+	public void setHobli(String hobli) {
+		this.hobli = hobli;
+	}
+
+	public String getVillage() {
+		return village;
+	}
+
+	public void setVillage(String village) {
+		this.village = village;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getAck_no() {
+		return ack_no;
+	}
+
+	public void setAck_no(String ack_no) {
+		this.ack_no = ack_no;
+	}
+
+	public String getCreated_by() {
+		return created_by;
+	}
+
+	public void setCreated_by(String created_by) {
+		this.created_by = created_by;
+	}
+
+	public int getStatus_id() {
+		return status_id;
+	}
+
+	public void setStatus_id(int status_id) {
+		this.status_id = status_id;
+	}
+
+	public Date getDateCreated() {
+		return dateCreated;
+	}
+
+	public void setDateCreated(Date dateCreated) {
+		this.dateCreated = dateCreated;
+	}
+
+	public Date getDate_completed() {
+		return date_completed;
+	}
+
+	public void setDate_completed(Date date_completed) {
+		this.date_completed = date_completed;
+	}
+
+	public int getAssignedTo() {
+		return assignedTo;
+	}
+
+	public void setAssignedTo(int assignedTo) {
+		this.assignedTo = assignedTo;
+	}
+
+	public int getAssigned_by() {
+		return assigned_by;
+	}
+
+	public void setAssigned_by(int assigned_by) {
+		this.assigned_by = assigned_by;
+	}
+
+}

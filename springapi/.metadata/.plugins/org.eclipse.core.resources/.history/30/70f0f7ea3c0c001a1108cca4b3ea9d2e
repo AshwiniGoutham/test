@@ -1,0 +1,16 @@
+package com.valtech.model;
+
+public class SurveyRequest {
+	
+	private Long id;
+	private String name;
+	private String landArea;
+	private String state;
+	private String landType;
+	private String district;
+	private String taluk;
+	private String hobli;
+	private String season;
+	private String mobile;
+
+}

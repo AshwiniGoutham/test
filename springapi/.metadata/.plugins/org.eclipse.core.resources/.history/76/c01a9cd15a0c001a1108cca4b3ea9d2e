@@ -1,0 +1,105 @@
+package com.valtech.model;
+
+public class SurveyRequest {
+
+	private Long id;
+	private String name;
+	private String landArea;
+	private String state;
+	private String landType;
+	private String district;
+	private String taluk;
+	private String hobli;
+	private String season;
+	private String mobile;
+	private String place;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getLandArea() {
+		return landArea;
+	}
+
+	public void setLandArea(String landArea) {
+		this.landArea = landArea;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getLandType() {
+		return landType;
+	}
+
+	public void setLandType(String landType) {
+		this.landType = landType;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+
+	public String getTaluk() {
+		return taluk;
+	}
+
+	public void setTaluk(String taluk) {
+		this.taluk = taluk;
+	}
+
+	public String getHobli() {
+		return hobli;
+	}
+
+	public void setHobli(String hobli) {
+		this.hobli = hobli;
+	}
+
+	public String getSeason() {
+		return season;
+	}
+
+	public void setSeason(String season) {
+		this.season = season;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getPlace() {
+		return place;
+	}
+
+	public void setPlace(String place) {
+		this.place = place;
+	}
+
+}

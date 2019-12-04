@@ -1,0 +1,54 @@
+package com.valtech.model;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.sun.istack.internal.NotNull;
+
+@Entity
+@Table(name = "farmer_survey_request")
+public class FarmerSurveyRequest {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@Column(name = "survey_request_id")
+	private Long id;
+
+	@NotNull
+	private String name;
+
+	private String hobli;
+	private String village;
+	private String district;
+	private String state;
+	private String mobile;
+	
+	@NotNull
+	@Column(name = "ack_no")
+	private String ackNo;
+	@NotNull
+	@Column(name = "created_by")
+	private String createdBy;
+	
+	
+	@Column(name = "status_id")
+	private int statusId;
+	@Column(name = "date_created")
+	private Date dateCreated;
+	
+	@Column(name = "date_completed")
+	private Date dateCompleted;
+	
+	@Column(name = "assigned_to")
+	private int assignedTo;
+	
+	@Column(name = "assigned_by")
+	private int assigned_by;
+
+	}

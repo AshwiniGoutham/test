@@ -1,0 +1,43 @@
+package com.valtech.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "survey_user_roles")
+public class SurveyUserRoles {
+
+	@Column(name = "survey_user_id")
+	private Long userId;
+
+	@Column(name = "survey_role_id")
+	private Long roleId;
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	public Long getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(Long roleId) {
+		this.roleId = roleId;
+	}
+	
+	@ManyToOne
+	@JoinColumn(name = "survey_users_id")
+	private SurveyUsers surveyUsers;
+	
+	@ManyToOne
+	@JoinColumn(name = "survey_roles_id")
+	private SurveyRoles surveyRoles;
+
+}

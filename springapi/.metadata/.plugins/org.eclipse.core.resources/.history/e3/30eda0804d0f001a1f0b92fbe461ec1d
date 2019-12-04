@@ -1,0 +1,45 @@
+package com.valtech.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.sun.istack.internal.NotNull;
+
+@Entity
+@Table(name = "survey_roles")
+public class SurveyRoles {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="survey_roles_id")
+	private Long id;
+	
+	@NotNull
+	@Column(name="survey_roles_name")
+	private String roleName;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+	
+	public SurveyRoles(String roleName) {
+		this.roleName = this.roleName;
+	}
+
+}
